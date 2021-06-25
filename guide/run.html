@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Run | clickhouse_sinker</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="clickhouse_sinker a tool to sink the data into ClickHouse">
+    
+    <link rel="preload" href="/clickhouse_sinker/assets/css/0.styles.f896ce31.css" as="style"><link rel="preload" href="/clickhouse_sinker/assets/js/app.7cedd5b8.js" as="script"><link rel="preload" href="/clickhouse_sinker/assets/js/3.62c681aa.js" as="script"><link rel="preload" href="/clickhouse_sinker/assets/js/14.d48c55d8.js" as="script"><link rel="prefetch" href="/clickhouse_sinker/assets/js/10.62686063.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/11.15f8cf3f.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/12.24c6fef9.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/13.fdcde818.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/15.85c2a3c5.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/4.4d539386.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/5.359d641c.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/6.45a9322b.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/7.4f423f42.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/8.170547eb.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/9.17253674.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/vendors~docsearch.e5d89337.js">
+    <link rel="stylesheet" href="/clickhouse_sinker/assets/css/0.styles.f896ce31.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/clickhouse_sinker/" class="home-link router-link-active"><!----> <span class="site-name">clickhouse_sinker</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/clickhouse_sinker/guide/install.html" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/dev/introduction.html" class="nav-link">
+  Introduction
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/configuration/flag.html" class="nav-link">
+  Configuration
+</a></div><div class="nav-item"><a href="https://github.com/housepower/clickhouse_sinker" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/guide/run.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/zh/" class="nav-link">
+  zh-CN
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/clickhouse_sinker/guide/install.html" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/dev/introduction.html" class="nav-link">
+  Introduction
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/configuration/flag.html" class="nav-link">
+  Configuration
+</a></div><div class="nav-item"><a href="https://github.com/housepower/clickhouse_sinker" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/guide/run.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/zh/" class="nav-link">
+  zh-CN
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Install and Run</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/clickhouse_sinker/guide/install.html" class="sidebar-link">Install</a></li><li><a href="/clickhouse_sinker/guide/run.html" aria-current="page" class="active sidebar-link">Run</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/clickhouse_sinker/guide/run.html#requirements" class="sidebar-link">Requirements</a></li><li class="sidebar-sub-header"><a href="/clickhouse_sinker/guide/run.html#configs" class="sidebar-link">Configs</a></li><li class="sidebar-sub-header"><a href="/clickhouse_sinker/guide/run.html#example" class="sidebar-link">Example</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="run"><a href="#run" class="header-anchor">#</a> Run</h1> <h2 id="requirements"><a href="#requirements" class="header-anchor">#</a> Requirements</h2> <p>Note: Ensure <code>clickhouse-server</code> and <code>kafka</code> work before running clickhouse_sinker.</p> <h2 id="configs"><a href="#configs" class="header-anchor">#</a> Configs</h2> <blockquote><p>There are two ways to get config: a local single config, or Nacos.</p></blockquote> <ul><li><p>For local file:</p> <p><code>clickhouse_sinker --local-cfg-file docker/test_auto_schema.json</code></p></li> <li><p>For Nacos:</p> <p><code>clickhouse_sinker --nacos-addr 127.0.0.1:8848 --nacos-username nacos --nacos-password nacos --nacos-dataid test_auto_schema</code></p></li></ul> <blockquote><p>Read more detail descriptions of config in <a href="/clickhouse_sinker/configuration/config.html">here</a></p></blockquote> <h2 id="example"><a href="#example" class="header-anchor">#</a> Example</h2> <p>Let's follow up a piece of the systest script.</p> <ul><li><p>Prepare</p> <ul><li>let's checkout <code>clickhouse_sinker</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">git</span> clone https://github.com/housepower/clickhouse_sinker.git
+$ <span class="token builtin class-name">cd</span> clickhouse_sinker
+</code></pre></div><ul><li>let's start standalone clickhouse-server and kafka in container:</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>$ docker-compose up -d
+</code></pre></div></li> <li><p>Create a simple table in Clickhouse</p> <blockquote><p>It's not the duty for clickhouse_sinker to auto create table, so we should do that manually.</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> test_auto_schema
+<span class="token punctuation">(</span>
+    <span class="token punctuation">`</span><span class="token keyword">day</span><span class="token punctuation">`</span> <span class="token keyword">Date</span> <span class="token keyword">DEFAULT</span> toDate<span class="token punctuation">(</span><span class="token keyword">time</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span><span class="token keyword">time</span><span class="token punctuation">`</span> <span class="token keyword">DateTime</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>name<span class="token punctuation">`</span> String<span class="token punctuation">,</span>
+    <span class="token punctuation">`</span><span class="token keyword">value</span><span class="token punctuation">`</span> Float64
+<span class="token punctuation">)</span>
+<span class="token keyword">ENGINE</span> <span class="token operator">=</span> MergeTree
+<span class="token keyword">PARTITION</span> <span class="token keyword">BY</span> <span class="token keyword">day</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token punctuation">(</span><span class="token keyword">time</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>Create a topic in kafka</p> <blockquote><p>I use <a href="https://github.com/birdayz/kaf" target="_blank" rel="noopener noreferrer">kaf<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> tool to create topics.</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kaf topic create topic1 -p <span class="token number">1</span> -r <span class="token number">1</span>
+✅ Created topic<span class="token operator">!</span>
+      Topic Name:            topic1
+      Partitions:            <span class="token number">1</span>
+      Replication Factor:    <span class="token number">1</span>
+      Cleanup Policy:        delete
+</code></pre></div></li> <li><p>Run clickhouse_sinker</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ./clickhouse_sinker --local-cfg-file docker/test_auto_schema.json
+</code></pre></div></li> <li><p>Send messages to the topic</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">'{&quot;time&quot; : &quot;2020-12-18T03:38:39.000Z&quot;, &quot;name&quot; : &quot;name1&quot;, &quot;value&quot; : 1}'</span> <span class="token operator">|</span> kaf -b <span class="token string">'127.0.0.1:9092'</span> produce topic1
+<span class="token builtin class-name">echo</span> <span class="token string">'{&quot;time&quot; : &quot;2020-12-18T03:38:39.000Z&quot;, &quot;name&quot; : &quot;name2&quot;, &quot;value&quot; : 2}'</span> <span class="token operator">|</span> kaf -b <span class="token string">'127.0.0.1:9092'</span> produce topic1
+<span class="token builtin class-name">echo</span> <span class="token string">'{&quot;time&quot; : &quot;2020-12-18T03:38:39.000Z&quot;, &quot;name&quot; : &quot;name3&quot;, &quot;value&quot; : 3}'</span> <span class="token operator">|</span> kaf -b <span class="token string">'127.0.0.1:9092'</span> produce topic1
+</code></pre></div></li> <li><p>Check the data in clickhouse</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> test_auto_schema<span class="token punctuation">;</span>
+
+<span class="token number">3</span> <span class="token keyword">rows</span> <span class="token operator">in</span> <span class="token keyword">set</span><span class="token punctuation">.</span> Elapsed: <span class="token number">0.016</span> sec<span class="token punctuation">.</span>
+
+</code></pre></div></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/clickhouse_sinker/guide/install.html" class="prev">
+        Install
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/clickhouse_sinker/assets/js/app.7cedd5b8.js" defer></script><script src="/clickhouse_sinker/assets/js/3.62c681aa.js" defer></script><script src="/clickhouse_sinker/assets/js/14.d48c55d8.js" defer></script>
+  </body>
+</html>

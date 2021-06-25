@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Config Items | clickhouse_sinker</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="clickhouse_sinker a tool to sink the data into ClickHouse">
+    
+    <link rel="preload" href="/clickhouse_sinker/assets/css/0.styles.f896ce31.css" as="style"><link rel="preload" href="/clickhouse_sinker/assets/js/app.7cedd5b8.js" as="script"><link rel="preload" href="/clickhouse_sinker/assets/js/3.62c681aa.js" as="script"><link rel="preload" href="/clickhouse_sinker/assets/js/9.17253674.js" as="script"><link rel="prefetch" href="/clickhouse_sinker/assets/js/10.62686063.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/11.15f8cf3f.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/12.24c6fef9.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/13.fdcde818.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/14.d48c55d8.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/15.85c2a3c5.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/4.4d539386.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/5.359d641c.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/6.45a9322b.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/7.4f423f42.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/8.170547eb.js"><link rel="prefetch" href="/clickhouse_sinker/assets/js/vendors~docsearch.e5d89337.js">
+    <link rel="stylesheet" href="/clickhouse_sinker/assets/css/0.styles.f896ce31.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/clickhouse_sinker/" class="home-link router-link-active"><!----> <span class="site-name">clickhouse_sinker</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/clickhouse_sinker/guide/install.html" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/dev/introduction.html" class="nav-link">
+  Introduction
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/configuration/flag.html" class="nav-link">
+  Configuration
+</a></div><div class="nav-item"><a href="https://github.com/housepower/clickhouse_sinker" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/configuration/config.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/zh/" class="nav-link">
+  zh-CN
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/clickhouse_sinker/guide/install.html" class="nav-link">
+  Get Started
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/dev/introduction.html" class="nav-link">
+  Introduction
+</a></div><div class="nav-item"><a href="/clickhouse_sinker/configuration/flag.html" class="nav-link">
+  Configuration
+</a></div><div class="nav-item"><a href="https://github.com/housepower/clickhouse_sinker" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/configuration/config.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/clickhouse_sinker/zh/" class="nav-link">
+  zh-CN
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Configuration</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/clickhouse_sinker/configuration/flag.html" class="sidebar-link">Flag</a></li><li><a href="/clickhouse_sinker/configuration/config.html" aria-current="page" class="active sidebar-link">Config</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="config-items"><a href="#config-items" class="header-anchor">#</a> Config Items</h1> <blockquote><p>Here we use json with comments for documentation</p></blockquote> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token comment">// ClickHouse config</span>
+  <span class="token property">&quot;clickhouse&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// cluster the ClickHouse node belongs</span>
+    <span class="token property">&quot;cluster&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// hosts for connection, it's Array(Array(String))</span>
+    <span class="token comment">// we can put hosts with same shard into the inner array</span>
+    <span class="token comment">// it helps data deduplication for ReplicateMergeTree when driver error occurs</span>
+    <span class="token property">&quot;hosts&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span>
+        <span class="token string">&quot;192.168.101.106&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;192.168.101.108&quot;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span>
+        <span class="token string">&quot;192.168.102.114&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;192.168.101.110&quot;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span>
+        <span class="token string">&quot;192.168.102.115&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">9000</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;default&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// database name</span>
+    <span class="token property">&quot;db&quot;</span><span class="token operator">:</span> <span class="token string">&quot;default&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// Whether enable TLS encryption with clickhouse-server</span>
+    <span class="token property">&quot;secure&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// Whether skip verify clickhouse-server cert if secure=true.</span>
+    <span class="token property">&quot;insecureSkipVerify&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// retryTimes when error occurs in inserting datas</span>
+    <span class="token property">&quot;retryTimes&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Kafka config</span>
+  <span class="token property">&quot;kafka&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;brokers&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1:9093&quot;</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// jave client style security authentication</span>
+    <span class="token property">&quot;security&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;security.protocol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SASL_PLAINTEXT&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sasl.kerberos.service.name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;kafka&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sasl.mechanism&quot;</span><span class="token operator">:</span><span class="token string">&quot;GSSAPI&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sasl.jaas.config&quot;</span><span class="token operator">:</span><span class="token string">&quot;com.sun.security.auth.module.Krb5LoginModule required useKeyTab=true storeKey=true debug=true keyTab=\&quot;/etc/security/mmmtest.keytab\&quot; principal=\&quot;mmm@ALANWANG.COM\&quot;;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// SSL</span>
+    <span class="token property">&quot;tls&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;enable&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token comment">// Required. It's the CA certificate with which Kafka brokers certs be signed.</span>
+      <span class="token property">&quot;caCertFiles&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/etc/security/ca-cert&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// Required if Kafka brokers require client authentication.</span>
+      <span class="token property">&quot;clientCertFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// Required if and only if ClientCertFile is present.</span>
+      <span class="token property">&quot;clientKeyFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// SASL</span>
+    <span class="token property">&quot;sasl&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;enable&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token comment">// Mechanism is the name of the enabled SASL mechanism.</span>
+      <span class="token comment">// Possible values: PLAIN, SCRAM-SHA-256, SCRAM-SHA-512, GSSAPI (defaults to PLAIN)</span>
+      <span class="token property">&quot;mechanism&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PLAIN&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// Username is the authentication identity (authcid) to present for</span>
+      <span class="token comment">// SASL/PLAIN or SASL/SCRAM authentication</span>
+      <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// Password for SASL/PLAIN or SASL/SCRAM authentication</span>
+      <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;gssapi&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// authtype - 1. KRB5_USER_AUTH, 2. KRB5_KEYTAB_AUTH</span>
+        <span class="token property">&quot;authtype&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;keytabpath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;kerberosconfigpath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;servicename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;realm&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;disablepafxfast&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// kafka version, if you use sarama, the version must be specified</span>
+    <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.2.1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;task&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test_dynamic_schema&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// kafka topic</span>
+    <span class="token property">&quot;topic&quot;</span><span class="token operator">:</span> <span class="token string">&quot;topic&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// kafka consume from earliest or latest</span>
+    <span class="token property">&quot;earliest&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// kafka consumer group</span>
+    <span class="token property">&quot;consumerGroup&quot;</span><span class="token operator">:</span> <span class="token string">&quot;group&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// message parser</span>
+    <span class="token property">&quot;parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;json&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// clickhouse table name</span>
+    <span class="token property">&quot;tableName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;daily&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// columns of the table</span>
+    <span class="token property">&quot;dims&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;day&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Date&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sourceName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;day&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      ...
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// if it's specified, the schema will be auto mapped from clickhouse,</span>
+    <span class="token property">&quot;autoSchema&quot;</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// &quot;this columns will be excluded by insert SQL &quot;</span>
+    <span class="token property">&quot;excludeColumns&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token comment">// (experiment feature) detect new fields and their type, and add columns to the ClickHouse table accordingly. This feature requires parser be &quot;fastjson&quot;, and support following ClickHouse data types: Int64, Float64, String.</span>
+    <span class="token property">&quot;dynamicSchema&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// whether enable this feature, default to false</span>
+      <span class="token property">&quot;enable&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// the upper limit of dynamic columns number, &lt;=0 means math.MaxInt16. protecting dirty data attack</span>
+      <span class="token property">&quot;maxDims&quot;</span><span class="token operator">:</span> <span class="token number">1024</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// shardingKey is the column name to which sharding against</span>
+    <span class="token property">&quot;shardingKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// shardingPolicy is `stripe,&lt;interval&gt;`(requires ShardingKey be numerical) or `hash`(requires ShardingKey be string)</span>
+    <span class="token property">&quot;shardingPolicy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// interval of flushing the batch. Default to 5, max to 10.</span>
+    <span class="token property">&quot;flushInterval&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token comment">// batch size to insert into clickhouse. sinker will round upward it to the the nearest 2^n. Default to 262114, max to 1048576.</span>
+    <span class="token property">&quot;bufferSize&quot;</span><span class="token operator">:</span> <span class="token number">262114</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// In the absence of time zone information, interprets the time as in the given location. Default to &quot;Local&quot; (aka /etc/localtime of the machine on which sinker runs)</span>
+    <span class="token property">&quot;timezone&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// log level, possible value: &quot;debug&quot;, &quot;info&quot;, &quot;warn&quot;, &quot;error&quot;, &quot;dpanic&quot;, &quot;panic&quot;, &quot;fatal&quot;. Default to &quot;info&quot;.</span>
+  <span class="token property">&quot;logLevel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;debug&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// log output paths, possible value: &quot;stdout&quot;, &quot;stderr&quot;, relative file path, absoute file path. Log files will be rotated every 100MB, keep 10 old ones. Default to [&quot;stdout&quot;].</span>
+  <span class="token property">&quot;logPaths&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;stdout&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;test_dynamic_schema.log&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/clickhouse_sinker/configuration/flag.html" class="prev">
+        Flag
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/clickhouse_sinker/assets/js/app.7cedd5b8.js" defer></script><script src="/clickhouse_sinker/assets/js/3.62c681aa.js" defer></script><script src="/clickhouse_sinker/assets/js/9.17253674.js" defer></script>
+  </body>
+</html>
